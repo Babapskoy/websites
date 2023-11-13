@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Elegant Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .header {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 20px;
+        }
+        .about-btn, .contact-btn {
+            display: inline-block;
+            font-size: 1em;
+            margin: 1em;
+            padding: 0.25em 1em;
+            border: 2px solid #FFFFFF;
+            border-radius: 3px;
+            display: block;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            background-color: #FFFFFF;
+        }
+        .about-btn {
+            color: #ff5e62;
+        }
+        .contact-btn {
+            color: #ff9966;
+        }
+        .about-btn:hover {
+            background-color: #ff5e62;
+            color: #FFFFFF;
+        }
+        .contact-btn:hover {
+            background-color: #ff9966;
+            color: #FFFFFF;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".about-btn").click(function(){
+                $(".content").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to My Elegant Website!</h1>
+    </div>
+    <a class="about-btn" href="about.html">About</a>
+    <a class="contact-btn" href="contact.html">Contact</a>
+   
+</body>
+</html>
